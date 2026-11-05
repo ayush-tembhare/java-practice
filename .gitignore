@@ -1,0 +1,8 @@
+/bin/
+
+# Java compiled files
+*.class
+*.log
+
+# Eclipse workspace metadata
+.metadata/
