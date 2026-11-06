@@ -3,6 +3,6 @@
 # Java compiled files
 *.class
 *.log
-
+/path.txt
 # Eclipse workspace metadata
 .metadata/
