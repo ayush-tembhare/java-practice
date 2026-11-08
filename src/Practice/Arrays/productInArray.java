@@ -20,6 +20,8 @@ public class productInArray {
 			product*=x;
 		}
 		System.out.println(product);
+		sc.close();
 	}
+	
 
 }
