@@ -1,4 +1,4 @@
-package JavaTPoint.BasicPrograms;
+package JavaTPoint._1BasicPrograms;
 
 import java.util.Scanner;
 //Write a Java program to check whether a given number is a palindrome or not.

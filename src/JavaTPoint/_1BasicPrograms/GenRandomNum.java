@@ -1,4 +1,4 @@
-package JavaTPoint.BasicPrograms;
+package JavaTPoint._1BasicPrograms;
 
 import java.util.Random;
 

@@ -1,8 +1,8 @@
-package JavaTPoint.BasicPrograms;
+package JavaTPoint._1BasicPrograms;
 
 import java.util.Scanner;
 
-public class FibonaciSeries_DoWhileLoop {
+public class Fibonacci_Series {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the num till  Fibonacci series you want ");
@@ -23,20 +23,17 @@ public class FibonaciSeries_DoWhileLoop {
 		else if(num>2&&num<48) {
 			System.out.print(n1+" ");
 			System.out.print(n2+" ");
-			int i=2;
-			do{
+			for(int i =2;i<num;i++) {
 				int n3=n1+n2;
 				System.out.print(n3+" ");
 				n1=n2;
 				n2=n3;	
-				i++;
-			}while(i<num);
+			}
 		}
 		else if(num>=48) {
 			System.out.println("Cannot generate more than 47 terms using int. ");
 		}			
 		sc.close();
 	}
-	
 
 }

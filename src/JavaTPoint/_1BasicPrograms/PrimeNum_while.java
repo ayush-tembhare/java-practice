@@ -1,8 +1,8 @@
-package JavaTPoint.BasicPrograms;
+package JavaTPoint._1BasicPrograms;
 
 import java.util.Scanner;
 
-public class PrimeNum_for {
+public class PrimeNum_while {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter num you want to check ");
@@ -13,17 +13,21 @@ public class PrimeNum_for {
 		if(n<=0||n==1) {
 			System.out.println(n+" is not a prime num ");
 		}else {
-			for(int i=2;i<=Math.sqrt(n);i++) {
+			int i=2;
+			while(i<=Math.sqrt(n)) {
+				
 				if(n%i==0) {
 					isPrime=false;
 					System.out.println(n+" is not a prime num ");
 					break;
 				}
+				i++;
 			}
 			if(isPrime) {
 				System.out.println(n+" is a prime num");
 			}
 		}
 	}
+
 
 }

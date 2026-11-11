@@ -1,8 +1,8 @@
-package JavaTPoint.BasicPrograms;
+package JavaTPoint._1BasicPrograms;
 
 import java.util.Scanner;
 
-public class ArmstrongUsingFor {
+public class ArmstrongUsingDoWhile {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the num u want to check :- ");
@@ -14,22 +14,26 @@ public class ArmstrongUsingFor {
 			int numcopy=num;
 			int powerSum=0;
 			int digit=0;
-			
-			for(;num>0;num=num/10){
+			do{
+				num=num/10;
 				digit++;
-			}
+			}while(num>0) ;
 			num=numcopy;
-			for(;num>0;num=num/10){
+			do{
 				int last=num%10;
 				int sq= (int) Math.pow(last,digit);
 				powerSum=powerSum+sq;
-			}
+				num=num/10;
+				System.out.println(last+" "+sq+" "+powerSum);//for checking dry run we can remove it 
+			}while(num>0) ;
 			if(powerSum==numcopy) {
 				System.out.println(numcopy+" is a Armstrong num");
 			}
 			else {
 				System.out.println(numcopy+" is not a Armstrong num");
 			}
-		}	
+		}
+		
 	}
+
 }

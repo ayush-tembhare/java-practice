@@ -1,8 +1,8 @@
-package JavaTPoint.BasicPrograms;
+package JavaTPoint._1BasicPrograms;
 
 import java.util.Scanner;
 
-public class FactUsingWhile {
+public class FacorialUsingFor {
 	public static void main(String[] args) {
 		 Scanner sc = new Scanner(System.in);
 		 System.out.println("Enter the number u want fact of");
@@ -10,9 +10,8 @@ public class FactUsingWhile {
 		 int fact=1;
 		 sc.close();
 		 if(num>=0) {
-			 while(num>=1) {
-				 fact=fact*num;
-				 num--;
+			 for(int i=num;i>=1;i--) {
+				 fact=fact*i;
 			 }
 			 System.out.println(fact);
 		 }else {
@@ -21,6 +20,5 @@ public class FactUsingWhile {
 		 
 		 
 	}
-
 
 }
