@@ -15,6 +15,7 @@ public class userinputArray {
 			System.out.println("enter num at index "+i);
 			arr[i]=sc.nextInt();
 		}
+		sc.close();
 		System.out.println(Arrays.toString(arr));
 	}
 }
