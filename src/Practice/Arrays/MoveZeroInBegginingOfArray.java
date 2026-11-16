@@ -15,15 +15,13 @@ public class MoveZeroInBegginingOfArray {
 				index++;
 			}
 		}
-		for(int i=copy.length-1;i>=0;i--) {
+		for(int i=0;i<copy.length;i++) {
 			arr[i]=copy[i];
 		}
+		Arrays.sort(copy);
 		System.out.println("copy");
 		System.out.println(Arrays.toString(copy));
-		System.out.println("Original after change");
-		System.out.println(Arrays.toString(arr));
+		 
 		
 	}
-
-
 }

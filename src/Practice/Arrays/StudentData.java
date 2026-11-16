@@ -2,7 +2,7 @@ package Practice.Arrays;
 
 public class StudentData {
 	int id;
-	String main;
+	String name;
 	int marks;
 	public int getId() {
 		return id;
@@ -10,11 +10,11 @@ public class StudentData {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getMain() {
-		return main;
+	public String getname() {
+		return name;
 	}
-	public void setMain(String main) {
-		this.main = main;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getMarks() {
 		return marks;
@@ -22,10 +22,10 @@ public class StudentData {
 	public void setMarks(int marks) {
 		this.marks = marks;
 	}
-	public StudentData(int id, String main, int marks) {
+	public StudentData(int id, String name, int marks) {
 		super();
 		this.id = id;
-		this.main = main;
+		this.name = name;
 		this.marks = marks;
 	}
 	public StudentData() {
